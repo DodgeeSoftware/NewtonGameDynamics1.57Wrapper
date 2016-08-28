@@ -1,0 +1,524 @@
+# depslib dependency file v1.0
+1412565138 source:c:\myprograms\newtongamedynamicswrapper\body\iphysicsbody.cpp
+	"IPhysicsBody.h"
+
+1472343952 c:\myprograms\newtongamedynamicswrapper\body\iphysicsbody.h
+	<cstddef>
+	<newton.h>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector2.h"
+	"NewtonVector3.h"
+	"PhysicsBodyTypes.h"
+
+1472304985 c:\myprograms\newtongamedynamicswrapper\body\physicsbodytypes.h
+
+1456392861 source:c:\myprograms\newtongamedynamicswrapper\body\physicsbody.cpp
+	"PhysicsBody.h"
+
+1472340997 c:\myprograms\newtongamedynamicswrapper\body\physicsbody.h
+	<cmath>
+	<iostream>
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<newton.h>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"PhysicsBodyTypes.h"
+
+1411411218 source:c:\myprograms\newtongamedynamicswrapper\body\physicsbodyfactory.cpp
+	"PhysicsBodyFactory.h"
+
+1472341092 c:\myprograms\newtongamedynamicswrapper\body\physicsbodyfactory.h
+	<cstddef>
+	<irrlicht.h>
+	<newton.h>
+	"NewtonAABB.h"
+	"NewtonMatrix4.h"
+	"NewtonVector.h"
+	"PhysicsCollisionFramesFactory.h"
+	"PhysicsBodyTypes.h"
+
+1422968232 source:c:\myprograms\newtongamedynamicswrapper\collision\factory\physicscollisionframefactory.cpp
+	"PhysicsCollisionFrameFactory.h"
+
+1472304668 c:\myprograms\newtongamedynamicswrapper\collision\factory\physicscollisionframefactory.h
+	<string>
+	<cstddef>
+	<newton.h>
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
+	"luabind/luabind.hpp"
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"PhysicsCollisionFrameTypes.h"
+
+1456393279 source:c:\myprograms\newtongamedynamicswrapper\collision\frames\physicscollisionframe.cpp
+	"PhysicsCollisionFrame.h"
+
+1472344570 c:\myprograms\newtongamedynamicswrapper\collision\frames\physicscollisionframe.h
+	<cmath>
+	<vector>
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<newton.h>
+	"NewtonUtils.h"
+	"PhysicsCollisionFrameTypes.h"
+
+1472304998 c:\myprograms\newtongamedynamicswrapper\collision\frames\physicscollisionframetypes.h
+
+1421590886 source:c:\myprograms\newtongamedynamicswrapper\collision\generic\physicsgenericcollision.cpp
+	"PhysicsGenericCollision.h"
+
+1472305149 c:\myprograms\newtongamedynamicswrapper\collision\generic\physicsgenericcollision.h
+	<cstddef>
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<newton.h>
+	"NewtonUtils.h"
+	"PhysicsCollisionFrame.h"
+	"PhysicsCollisionFrameRayImpactData.h"
+	"PhysicsCollisionFrameCollide.h"
+	"PhysicsCollisionFrameClosestPoint.h"
+	"PhysicsCollisionFrameClosestPoints.h"
+
+1472305240 c:\myprograms\newtongamedynamicswrapper\collision\generic\physicscollisionframecollide.h
+	<cstddef>
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<newton.h>
+	"NewtonUtils.h"
+
+1456396285 c:\myprograms\newtongamedynamicswrapper\collision\generic\physicscollisionframeclosestpoint.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<newton.h>
+	"NewtonUtils.h"
+
+1472305307 c:\myprograms\newtongamedynamicswrapper\collision\generic\physicscollisionframeclosestpoints.h
+	<cstddef>
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<newton.h>
+	"NewtonUtils.h"
+
+1456393411 source:c:\myprograms\newtongamedynamicswrapper\debugger\iphysicsdebugger.cpp
+	"IPhysicsDebugger.h"
+
+1472342724 c:\myprograms\newtongamedynamicswrapper\debugger\iphysicsdebugger.h
+	<iostream>
+	<vector>
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<newton.h>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"IPhysicsRay.h"
+	"IPhysicsJoint.h"
+	"PhysicsBallAndSocketJoint.h"
+	"PhysicsCorkscrewJoint.h"
+	"PhysicsHingeJoint.h"
+	"PhysicsSliderJoint.h"
+	"PhysicsUniversalJoint.h"
+	"PhysicsUpVectorJoint.h"
+	"IPhysicsVehicle.h"
+	"IPhysicsTrigger.h"
+	"IPhysicsRagDoll.h"
+	"IPhysicsDebugger.h"
+
+1421319896 source:c:\myprograms\newtongamedynamicswrapper\joints\factory\physicsjointfactory.cpp
+	"PhysicsJointFactory.h"
+
+1472344663 c:\myprograms\newtongamedynamicswrapper\joints\factory\physicsjointfactory.h
+	<cstddef>
+	<newton.h>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"PhysicsWorld.h"
+	"PhysicsJointTypes.h"
+	"IPhysicsJoint.h"
+	"PhysicsBallAndSocketJoint.h"
+	"PhysicsCorkscrewJoint.h"
+	"PhysicsHingeJoint.h"
+	"PhysicsSliderJoint.h"
+	"PhysicsUniversalJoint.h"
+	"PhysicsUpVectorJoint.h"
+
+1456394447 source:c:\myprograms\newtongamedynamicswrapper\joints\iphysicsjoint.cpp
+	"IPhysicsJoint.h"
+
+1456394613 c:\myprograms\newtongamedynamicswrapper\joints\iphysicsjoint.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<string>
+	<cstddef>
+	<newton.h>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"PhysicsWorld.h"
+	"PhysicsJointTypes.h"
+
+1410892263 c:\myprograms\newtongamedynamicswrapper\joints\physicsjointtypes.h
+
+1456394411 source:c:\myprograms\newtongamedynamicswrapper\joints\physicsballandsocketjoint.cpp
+	"PhysicsBallAndSocketJoint.h"
+
+1472303044 c:\myprograms\newtongamedynamicswrapper\joints\physicsballandsocketjoint.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<newton.h>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"IPhysicsJoint.h"
+
+1456394399 source:c:\myprograms\newtongamedynamicswrapper\joints\physicscorkscrewjoint.cpp
+	"PhysicsCorkscrewJoint.h"
+
+1472303140 c:\myprograms\newtongamedynamicswrapper\joints\physicscorkscrewjoint.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<newton.h>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"IPhysicsJoint.h"
+
+1456394386 source:c:\myprograms\newtongamedynamicswrapper\joints\physicscustomjoint.cpp
+	"PhysicsCustomJoint.h"
+
+1472303198 c:\myprograms\newtongamedynamicswrapper\joints\physicscustomjoint.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<newton.h>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"IPhysicsJoint.h"
+
+1456394370 source:c:\myprograms\newtongamedynamicswrapper\joints\physicshingejoint.cpp
+	"PhysicsHingeJoint.h"
+
+1472303282 c:\myprograms\newtongamedynamicswrapper\joints\physicshingejoint.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<newton.h>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"IPhysicsJoint.h"
+
+1456394351 source:c:\myprograms\newtongamedynamicswrapper\joints\physicssliderjoint.cpp
+	"PhysicsSliderJoint.h"
+
+1472345015 c:\myprograms\newtongamedynamicswrapper\joints\physicssliderjoint.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<newton.h>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"IPhysicsJoint.h"
+
+1456394337 source:c:\myprograms\newtongamedynamicswrapper\joints\physicsuniversaljoint.cpp
+	"PhysicsUniversalJoint.h"
+
+1472345093 c:\myprograms\newtongamedynamicswrapper\joints\physicsuniversaljoint.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<newton.h>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"IPhysicsJoint.h"
+
+1456394322 source:c:\myprograms\newtongamedynamicswrapper\joints\physicsupvectorjoint.cpp
+	"PhysicsUpVectorJoint.h"
+
+1472345177 c:\myprograms\newtongamedynamicswrapper\joints\physicsupvectorjoint.h
+	<iostream>
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<Newton.h>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"IPhysicsJoint.h"
+
+1422950511 source:c:\myprograms\newtongamedynamicswrapper\materials\factory\physicsmaterialfactory.cpp
+	"PhysicsMaterialFactory.h"
+
+1472344874 c:\myprograms\newtongamedynamicswrapper\materials\factory\physicsmaterialfactory.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<cmath>
+	<newton.h>
+	"PhysicsMaterial.h"
+
+1422958692 source:c:\myprograms\newtongamedynamicswrapper\materials\physicsmaterial.cpp
+	"PhysicsMaterial.h"
+
+1472344779 c:\myprograms\newtongamedynamicswrapper\materials\physicsmaterial.h
+	<iostream>
+	<string>
+	<cstddef>
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<newton.h>
+
+1456396557 source:c:\myprograms\newtongamedynamicswrapper\ragdoll\iphysicsragdoll.cpp
+	"IPhysicsRagDoll.h"
+
+1472342618 c:\myprograms\newtongamedynamicswrapper\ragdoll\iphysicsragdoll.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+
+1413430580 source:c:\myprograms\newtongamedynamicswrapper\ragdoll\physicsragdoll.cpp
+	"PhysicsRagDoll.h"
+
+1472342560 c:\myprograms\newtongamedynamicswrapper\ragdoll\physicsragdoll.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<newton.h>
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"PhysicsRagDollBone.h"
+
+1472344084 c:\myprograms\newtongamedynamicswrapper\ragdoll\physicsragdollbone.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<newton.h>
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+
+1413431390 source:c:\myprograms\newtongamedynamicswrapper\ragdoll\physicsragdollbone.cpp
+	"PhysicsRagDollBone.h"
+
+1412299008 source:c:\myprograms\newtongamedynamicswrapper\rays\iphysicsray.cpp
+	"IPhysicsRay.h"
+
+1472302291 c:\myprograms\newtongamedynamicswrapper\rays\iphysicsray.h
+	<vector>
+	<cstddef>
+	<newton.h>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"PhysicsRayImpactData.h"
+
+1472302609 c:\myprograms\newtongamedynamicswrapper\rays\physicsrayimpactdata.h
+	<cstddef>
+	<newton.h>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+
+1415414622 source:c:\myprograms\newtongamedynamicswrapper\rays\physicsrayclosest.cpp
+	"PhysicsRayClosest.h"
+
+1472345330 c:\myprograms\newtongamedynamicswrapper\rays\physicsrayclosest.h
+	<algorithm>
+	<iostream>
+	<vector>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"IPhysicsRay.h"
+
+1415414588 source:c:\myprograms\newtongamedynamicswrapper\rays\physicsraydefault.cpp
+	"PhysicsRayDefault.h"
+
+1472344980 c:\myprograms\newtongamedynamicswrapper\rays\physicsraydefault.h
+	<algorithm>
+	<iostream>
+	<vector>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"IPhysicsRay.h"
+
+1415414634 source:c:\myprograms\newtongamedynamicswrapper\rays\physicsrayfurthest.cpp
+	"PhysicsRayFurthest.h"
+
+1472345787 c:\myprograms\newtongamedynamicswrapper\rays\physicsrayfurthest.h
+	<algorithm>
+	<iostream>
+	<vector>
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"IPhysicsRay.h"
+
+1413388050 source:c:\myprograms\newtongamedynamicswrapper\vehicle\iphysicsvehicle.cpp
+	"IPhysicsVehicle.h"
+
+1472342845 c:\myprograms\newtongamedynamicswrapper\vehicle\iphysicsvehicle.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+
+1410934647 source:c:\myprograms\newtongamedynamicswrapper\vehicle\physicsvehicle.cpp
+	"PhysicsVehicle.h"
+
+1472345241 c:\myprograms\newtongamedynamicswrapper\vehicle\physicsvehicle.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<newton.h>
+	"NewtonVector3.h"
+	"NewtonMatrix4.h"
+
+1410935507 source:c:\myprograms\newtongamedynamicswrapper\vehicle\physicsvehicletire.cpp
+	"PhysicsVehicleTire.h"
+
+1472345281 c:\myprograms\newtongamedynamicswrapper\vehicle\physicsvehicletire.h
+	<cstddef>
+	<newton.h>
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+
+1472299507 source:c:\myprograms\newtongamedynamicswrapper\world\physicsworld.cpp
+	"PhysicsWorld.h"
+
+1472343858 c:\myprograms\newtongamedynamicswrapper\world\physicsworld.h
+	<lua.h>
+	<lualib.h>
+	<lauxlib.h>
+	<luabind/luabind.hpp>
+	<cstddef>
+	<newton.h>
+	"EFrictionModel.h"
+	"EPlatformArchitecture.h"
+	"ESolverModel.h"
+	"NewtonAABB.h"
+	"NewtonFreezeThreshold.h"
+	"NewtonGlobalScale.h"
+	"NewtonMassMatrix.h"
+	"NewtonMatrix4.h"
+	"NewtonVector3.h"
+	"PhysicsBuoyancyPlane.h"
+
+1472301163 c:\myprograms\newtongamedynamicswrapper\world\efrictionmodel.h
+
+1472301098 c:\myprograms\newtongamedynamicswrapper\world\eplatformarchitecture.h
+
+1472301005 c:\myprograms\newtongamedynamicswrapper\world\esolvermodel.h
+

@@ -114,7 +114,7 @@ class PhysicsRayFurthest : public IPhysicsRay
           * @param hitNormal TODO: Comment me
           * @param collisionID TODO: Comment me
           * @param pUserData TODO: Comment me
-          * @param intersetParam TODO: Comment me
+          * @param intersetParam TODO: Comment me **/
         virtual float userRayFilterCallback(const NewtonBody* pNewtonBody, const dFloat* hitNormal, int collisionID, void* pUserData, dFloat intersetParam);
 };
 
