@@ -1,13 +1,18 @@
 #ifndef PHYSICSDEBUGGER_H
 #define PHYSICSDEBUGGER_H
 
+// C++ Includes
 #include <iostream>
 #include <cstddef>
 #include <vector>
 
-/* This Debugger was written specifically for Irrlicht and so has dependencies*/
+// IRRLICHT Includes
 #include <irrlicht.h>
+
+// NEWTONGAMEDYNAMICS Includs
 #include <newton.h>
+
+// GAMEPHYSICS Includes
 #include "NewtonAABB.h"
 #include "NewtonFreezeThreshold.h"
 #include "NewtonGlobalScale.h"
@@ -25,7 +30,6 @@
 #include "PhysicsSliderJoint.h"
 #include "PhysicsUniversalJoint.h"
 #include "PhysicsUpVectorJoint.h"
-
 #include "PhysicsUtils.h"
 
 /**
@@ -66,7 +70,9 @@ class PhysicsDebugger : public IPhysicsDebugger
         //! Destructor
         virtual ~PhysicsDebugger() {}
 
-    // IRRLICHT DEVICE
+    // *******************
+    // * IRRLICHT DEVICE *
+    // *******************
     public:
         //! Get the Irrlicht Device for the Debugger
         virtual irr::IrrlichtDevice* getIrrlichtDevice() { return this->pIrrlichtDevice; }
@@ -77,7 +83,9 @@ class PhysicsDebugger : public IPhysicsDebugger
         //! Maintain a pointer to the Irrlicht Device
         irr::IrrlichtDevice* pIrrlichtDevice;
 
-    // DRAWING FUNCTIONS
+    // *********************
+    // * DRAWING FUNCTIONS *
+    // *********************
     protected:
         //! Draw World Boundaries
         virtual void drawWorldBoundaries();
@@ -97,6 +105,7 @@ class PhysicsDebugger : public IPhysicsDebugger
         virtual void drawBuoyancyPlane();
 
     // JOINT DRAWING FUNCTIONS
+    protected:
         //! Draw BallAndSocketJoint
         virtual void drawBallAndSocketJoint(PhysicsBallAndSocketJoint* pPhysicsBallAndSocketJoint);
         //! Draw CorkscewJoint
@@ -112,73 +121,75 @@ class PhysicsDebugger : public IPhysicsDebugger
         //! Draw UpVectorJoint
         virtual void drawUpVectorJoint(PhysicsUpVectorJoint* pPhysicsUpVectorJoint);
 
-    // MATERIALS AND COLOURS
+    // *************************
+    // * MATERIALS AND COLOURS *
+    // *************************
     public:
         //! Get Material
-        irr::video::SMaterial& getMaterial() { return this->material; }
+        virtual irr::video::SMaterial& getMaterial() { return this->material; }
         //! Get WorldBox Colour
-        irr::video::SColor getWorldBoxColour() { return this->worldBoxColour; }
+        virtual irr::video::SColor getWorldBoxColour() { return this->worldBoxColour; }
         //! Set WorldBox Colour
-        void setWorldBoxColour(irr::video::SColor colour) { this->worldBoxColour = colour; }
+        virtual void setWorldBoxColour(irr::video::SColor colour) { this->worldBoxColour = colour; }
         //! Get axisAlignedBoundingBoxColor Colour
-        irr::video::SColor getAxisAlignedBoundingBoxColour() { return this->axisAlignedBoundingBoxColour; }
+        virtual irr::video::SColor getAxisAlignedBoundingBoxColour() { return this->axisAlignedBoundingBoxColour; }
         //! Set axisAlignedBoundingBoxColor Colour
-        void setAxisAlignedBoundingBoxColour(irr::video::SColor colour) { this->axisAlignedBoundingBoxColour = colour; }
+        virtual void setAxisAlignedBoundingBoxColour(irr::video::SColor colour) { this->axisAlignedBoundingBoxColour = colour; }
         //! Get GeometryColour Colour
-        irr::video::SColor getGeometryColour() { return this->geometryColour; }
+        virtual irr::video::SColor getGeometryColour() { return this->geometryColour; }
         //! Set GeometryColor Colour
-        void setGeometryColour(irr::video::SColor colour) { this->geometryColour = colour; }
+        virtual void setGeometryColour(irr::video::SColor colour) { this->geometryColour = colour; }
         //! Get JointColour Colour
-        irr::video::SColor getJointColour() { return this->jointColour; }
+        virtual irr::video::SColor getJointColour() { return this->jointColour; }
         //! Set JointColour Colour
-        void setJointColour(irr::video::SColor colour) { this->jointColour = colour; }
+        virtual void setJointColour(irr::video::SColor colour) { this->jointColour = colour; }
         //! Get VehicleColour Colour
-        irr::video::SColor getVehicleColour() { return this->vehicleColour; }
+        virtual irr::video::SColor getVehicleColour() { return this->vehicleColour; }
         //! Set VehicleColour Colour
-        void setVehicleColour(irr::video::SColor colour) { this->vehicleColour = colour; }
+        virtual void setVehicleColour(irr::video::SColor colour) { this->vehicleColour = colour; }
         //! Get TriggerColour Colour
-        irr::video::SColor getTriggerColour() { return this->triggerColour; }
+        virtual irr::video::SColor getTriggerColour() { return this->triggerColour; }
         //! Set TriggerColour Colour
-        void setTriggerColour(irr::video::SColor colour) { this->triggerColour = colour; }
+        virtual void setTriggerColour(irr::video::SColor colour) { this->triggerColour = colour; }
         //! Get RayColour
-        irr::video::SColor getRayColour() { return this->rayColour; }
+        virtual irr::video::SColor getRayColour() { return this->rayColour; }
         //! Set RayColour Colour
-        void setRayColour(irr::video::SColor colour) { this->rayColour = colour; }
+        virtual void setRayColour(irr::video::SColor colour) { this->rayColour = colour; }
         //! Get RayNormalColour
-        irr::video::SColor getRayNormalColour() { return this->rayNormalColour; }
+        virtual irr::video::SColor getRayNormalColour() { return this->rayNormalColour; }
         //! Set RayNormalColour
-        void setRayNormalColour(irr::video::SColor colour) { this->rayNormalColour = colour; }
+        virtual void setRayNormalColour(irr::video::SColor colour) { this->rayNormalColour = colour; }
         //! Get BuoyancyPlaneColour
-        irr::video::SColor getBuoyancyPlaneColour() { return this->buoyancyPlaneColour; }
+        virtual irr::video::SColor getBuoyancyPlaneColour() { return this->buoyancyPlaneColour; }
         //! Set BuoyancyPlaneColour
-        void setBuoyancyPlaneColour(irr::video::SColor colour) { this->buoyancyPlaneColour = colour; }
+        virtual void setBuoyancyPlaneColour(irr::video::SColor colour) { this->buoyancyPlaneColour = colour; }
         //! Get CollisionFrameColour
-        irr::video::SColor getCollisionFrameColour() { return this->collisionFrameColour; }
+        virtual irr::video::SColor getCollisionFrameColour() { return this->collisionFrameColour; }
         //! Set CollisionFrameColour
-        void setCollisionFrameColour(irr::video::SColor colour) { this->collisionFrameColour = colour; }
+        virtual void setCollisionFrameColour(irr::video::SColor colour) { this->collisionFrameColour = colour; }
 
     protected:
-        //! Material Used By the renderer
+        // Material Used By the renderer
         irr::video::SMaterial material;
-        //! WorldBox Colour
+        // WorldBox Colour
         irr::video::SColor worldBoxColour;
-        //! BoundingBox Colour
+        // BoundingBox Colour
         irr::video::SColor axisAlignedBoundingBoxColour;
-        //! Geometry Colour
+        // Geometry Colour
         irr::video::SColor geometryColour;
-        //! Joint Colour
+        // Joint Colour
         irr::video::SColor jointColour;
-        //! Vehicle Colour
+        // Vehicle Colour
         irr::video::SColor vehicleColour;
-        //! Trigger Colour
+        // Trigger Colour
         irr::video::SColor triggerColour;
-        //! Ray Colour
+        // Ray Colour
         irr::video::SColor rayColour;
-        //! Ray Normal Colour
+        // Ray Normal Colour
         irr::video::SColor rayNormalColour;
-        //! Buoyancy Plane Colour
+        // Buoyancy Plane Colour
         irr::video::SColor buoyancyPlaneColour;
-        //! Collision Frame Colour
+        // Collision Frame Colour
         irr::video::SColor collisionFrameColour;
 };
 

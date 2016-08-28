@@ -9,13 +9,14 @@
 #ifndef NEWTONMATRIX4_H
 #define NEWTONMATRIX4_H
 
-// LUA BIND INCLUDES
+// LUA Includes
 extern "C"
 {
     #include <lua.h>
     #include <lualib.h>
     #include <lauxlib.h>
 }
+// LUABIND Includes
 #include <luabind/luabind.hpp>
 
 // C++ Includes
@@ -25,10 +26,12 @@ extern "C"
 // NEWTON GAME DYNAMICS Includes
 #include <Newton.h>
 
-// GAMEPHYSICS INCLUDES
+// GAMEPHYSICS Includes
 #include "NewtonVector3.h"
 
-/** The NewtonMatrix4 class is a math structure representing a 4x4 matrix. This matrices are in row major format. Which
+/** @class NewtonMatrix4
+  * @brief The NewtonMatrix4 class is a container for the a 4x4 mathematical matrix
+  * @detail The NewtonMatrix4 class is a math structure representing a 4x4 matrix. This matrices are in row major format. Which
     may seem at odds with how the matrix indices are accessed. This is because when you encoding a row major matrix
     in a c/c++ array you need to transpose it, this means row major will appear when references the array as a column
     major matrix. The reason the matrix is in row major format is because this matrix class has been designed with
@@ -36,8 +39,7 @@ extern "C"
     also stores it matrices in row major format. Please consider this matrix class has been designed to mirror
     the Irrlicht1.8 Matrix4 class and as such has some deliberately broken functions I list them here:
     * Calling SetScale will corrupt your rotation matrix
-    * Calling SetRotationDegrees/Radians will remove your scale
-    **/
+    * Calling SetRotationDegrees/Radians will remove your scale **/
 class NewtonMatrix4
 {
     // ******************************

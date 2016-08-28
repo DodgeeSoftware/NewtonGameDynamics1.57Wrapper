@@ -10,24 +10,30 @@
 #ifndef PHYSICSMATERIAL_H
 #define PHYSICSMATERIAL_H
 
-// C++ INCLUDES
+// C++ Includes
 #include <iostream>
 #include <string>
+#include <cstddef>
 
-// LUA BIND INCLUDES
+// LUA Includes
 extern "C"
 {
     #include <lua.h>
     #include <lualib.h>
     #include <lauxlib.h>
 }
+// LUABIND Includes
 #include <luabind/luabind.hpp>
 
-// NEWTON INCLUDES
-#include <cstddef>
+// NEWTON Includes
 #include <newton.h>
 
 // TODO: Materials probably should have pointers to callbacks and functions to set, in the event nondefault ones are to be used
+/** @class PhysicsMaterial
+  * @brief The PhysicsJointFactory is a wrapper around a NewtonMaterial
+  * @detail PhysicsMaterial is a container for functions relating to
+  * a NewtonMaterial. Two materials are involved when two NewtonBodies
+  * collide or slide against eachother **/
 class PhysicsMaterial
 {
     // ******************************

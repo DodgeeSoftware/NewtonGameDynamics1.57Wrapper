@@ -26,6 +26,9 @@
     only the furthest object hit in its impact data vector **/
 class PhysicsRayFurthest : public IPhysicsRay
 {
+    // *****************************
+    // * CONSTRUCTORs / DESRUCTORS *
+    // *****************************
     public:
         //! Default Contructor
         PhysicsRayFurthest()
@@ -43,10 +46,20 @@ class PhysicsRayFurthest : public IPhysicsRay
         //! Default Destructor
         virtual ~PhysicsRayFurthest() {}
 
+    protected:
+        // methods and members
+
+    // *********************
+    // * RAYCAST FUNCTIONS *
+    // *********************
     public:
         //! Execute the RayCast
-        /**
-          * @brief This function will fire the ray from the start position to the end position
+        /** @brief This function will fire the ray from the start position to the end position
+          * @param x0 starting x
+          * @param y0 starting y
+          * @param z0 starting z
+          * @param x1 finishing x
+          * @param z1 finished z
           **/
         virtual bool execute(float x0, float y0, float z0, float x1, float y1, float z1, NewtonWorld* pNewtonWorld)
         {
@@ -78,16 +91,30 @@ class PhysicsRayFurthest : public IPhysicsRay
             return true;
         }
 
-    // CLONE
+    // *********
+    // * CLONE *
+    // *********
     public:
-        //! Clone this ray (used by the physics debugger)
+        /** @brief Clone this ray (used by the physics debugger) **/
         virtual IPhysicsRay* clone() { return new PhysicsRayFurthest(*this); }
 
-    // CALLBACKS
+    // *************
+    // * CALLBACKS *
+    // *************
     public:
-        //! This Callback is used to exclude certain geometry from being hit by a ray, return 1 to process 0 to stop
+        /** @brief This Callback is used to exclude certain geometry from being hit by a ray,
+          * @param body TODO: Comment me
+          * @param hitNormal TODO: Comment me
+          * @param collision TODO: Comment me
+          * @param userData TODO: Comment me
+          * @return return 1 to process 0 to stop **/
         virtual unsigned userRayPrefilterCallback(const NewtonBody* body, const NewtonCollision* collision, void* userData);
-        //! In this callback we grab information about the ray's impact with world geometry
+        /** @brief In this callback we grab information about the ray's impact with world geometry
+          * @param pNewtonBody TODO: Comment me
+          * @param hitNormal TODO: Comment me
+          * @param collisionID TODO: Comment me
+          * @param pUserData TODO: Comment me
+          * @param intersetParam TODO: Comment me
         virtual float userRayFilterCallback(const NewtonBody* pNewtonBody, const dFloat* hitNormal, int collisionID, void* pUserData, dFloat intersetParam);
 };
 

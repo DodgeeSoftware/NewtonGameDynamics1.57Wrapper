@@ -28,7 +28,9 @@ extern "C"
 // NEWTON WRAPPER
 #include "NewtonVector3.h"
 
-/** The PhysicsBuoyancyPlane is a container for a Buoyancy Plane **/
+/** @class PhysicsBuoyancyPlane
+  * @brief The PhysicsBuoyancyPlane is a container for a Buoyancy Plane
+  * @detail A PhysicsBuoyancyPlane is used by the PhysicsWorld to create an infinite water plan **/
 class PhysicsBuoyancyPlane
 {
     // ******************************

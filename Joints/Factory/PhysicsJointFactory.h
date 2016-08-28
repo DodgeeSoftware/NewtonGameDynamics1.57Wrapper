@@ -30,7 +30,9 @@
 #include "PhysicsUpVectorJoint.h"
 
 // TODO: implement me; this replaces the Joint Mgr
-/** The PhysicsJointFactory is used to create physics joints. Physics Joints Connect
+/** @class PhysicsJointFactory
+  * @brief The PhysicsJointFactory is a container for a Buoyancy Plane
+  * @detail The PhysicsJointFactory is used to create physics joints. Physics Joints Connect
     NewtonBodies together and also have the ability to constrain movement of bodies **/
 class PhysicsJointFactory
 {

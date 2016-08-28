@@ -26,9 +26,18 @@ extern "C"
 #include "NewtonMatrix4.h"
 #include "NewtonVector3.h"
 
+/** @class PhysicsRagDollBone
+  * @brief The PhysicsRagDollBone is a wrapper around the NewtonRagDollBone
+  * @detail Implement the PhysicsRagDollBone to create a PhysicsRagDollBone. To use this you'll want to either
+  * create a custom scene node that has one of these as a member or alternatively this will form a base
+  * for your custom scenenode **/
 class PhysicsRagDollBone
 {
+    // ****************
+    // * CONSTRUCTORS *
+    // ****************
     public:
+        //! Constructor
         PhysicsRagDollBone()
         {
             this->pNewtonWorld = 0;
@@ -36,43 +45,71 @@ class PhysicsRagDollBone
             this->pRagDollBone = 0;
             this->id = -1;
         }
+        //! Destructor
         virtual ~PhysicsRagDollBone() {}
 
-    // NEWTON WORLD
+    protected:
+        //! Copy Constructor
+        PhysicsRagDollBone(PhysicsRagDollBone* other) {}
+
+    // ************************
+    // * OVERLOADED OPERATORS *
+    // ************************
     public:
-        //! Get World
+        // members and methods
+
+    protected:
+        // members and methods
+
+    // ****************
+    // * NEWTON WORLD *
+    // ****************
+    public:
+        /** @brief Get World
+          * @return NewtonWorld **/
         virtual const NewtonWorld* getNewtonWorld() const { return this->pNewtonWorld; }
-        //! Set NewtonWorld
+        /** @brief Set NewtonWorld
+          * @param pNewtonWorld NewtonWorld **/
         virtual void setNewtonWorld(NewtonWorld* pNewtonWorld) { this->pNewtonWorld = pNewtonWorld; }
 
     protected:
-        //! Pointer to the Physics World
+        // Pointer to the Physics World
         NewtonWorld* pNewtonWorld;
 
-    // RAGDOLL
+    // ***********
+    // * RAGDOLL *
+    // ***********
     public:
-        //! Get the RagDoll associated with this bone
+        /** @brief Get the RagDoll associated with this bone
+          * @return NewtonRagDoll **/
         NewtonRagDoll* getRagDoll() { return this->pNewtonRagDoll; }
-        //! Set the RagDoll associated with this bone
+        /** @brief Set the RagDoll associated with this bone
+          * @param pNewtonRagDoll **/
         void setRagDoll(NewtonRagDoll* pNewtonRagDoll) { this->pNewtonRagDoll = pNewtonRagDoll; }
 
     protected:
-        //! Local Reference to the RagDoll
+        // Local Reference to the RagDoll
         NewtonRagDoll* pNewtonRagDoll;
 
-    // BONE
+    // ********
+    // * BONE *
+    // ********
     public:
-        //! Get the RagDoll Bone
+        /** @brief Get the RagDoll Bone
+          * @return NewtonRagDollBone pointer **/
         NewtonRagDollBone* getRagDollBone() { return this->pRagDollBone; }
-        //! Set the RagDoll Bone
+        /** @brief Set the RagDoll Bone
+          * @param pRagDollBone **/
         void setRagDollBone(NewtonRagDollBone* pRagDollBone) { this->pRagDollBone; }
-        //! Get UserData
+        /** @brief Get UserData
+          * @return void* userData **/
         void* getUserData()
         {
             // return the user data for the bone
             return NewtonRagDollBoneGetUserData(this->pRagDollBone);
         }
-        //! Get the NewtonBody for this Joint
+        /** @brief Get the NewtonBody for this Joint
+          * @return The NewtonBody **/
         NewtonBody* pGetNewtonBody()
         {
             // Validate RagDollBone
@@ -81,7 +118,11 @@ class PhysicsRagDollBone
             // Return the NewtonBody Associated with this Joint
             return NewtonRagDollBoneGetBody(this->pRagDollBone);
         }
-        //! Set Limits for the bone
+        /** @brief Set Limits for the bone
+          * @param conDir cone direction
+          * @param minConeAngle minimum cone angle
+          * @param maxConeAngle max cone angle
+          * @param maxTwistAngle **/
         void setLimits(NewtonVector3 conDir, dFloat minConeAngle, dFloat maxConeAngle, dFloat maxTwistAngle)
         {
             // Validate RagDollBone
@@ -90,7 +131,8 @@ class PhysicsRagDollBone
             // Set the limits for the bone
             NewtonRagDollBoneSetLimits(this->pRagDollBone, conDir.getPointer(), minConeAngle, maxConeAngle, maxTwistAngle, (dFloat*)0, 0, 0);
         }
-        //! Get the Bone's Local Matrix
+        /** @brief Get the Bone's Local Matrix
+          * @return NewtonMatrix4 representing the bone's local matrix **/
         NewtonMatrix4 getLocalMatrix()
         {
             // Make a container for the local matrix
@@ -103,7 +145,8 @@ class PhysicsRagDollBone
             // Return the local matrix
             return matrix;
         }
-        //! Get the Bone's World Matrix
+        /** @brief Get the Bone's World Matrix
+          * @return NewtonMatrix4 representing the bones transform in world coordinates **/
         NewtonMatrix4 getWorldMatrix()
         {
             // Make a container for the world matrix
@@ -118,7 +161,8 @@ class PhysicsRagDollBone
         }
         //! Get the Bone's ID
         int getBoneID() { return this->id; }
-        //! Set the Bone's ID
+        /** @brief Set the Bone's ID
+          * @param id the bone's ID **/
         void setBoneID(int id)
         {
             NewtonRagDollBoneSetID (this->pRagDollBone, id);
@@ -126,9 +170,9 @@ class PhysicsRagDollBone
         }
 
     protected:
-        //! Local Reference tot he RagDollBone
+        // Local Reference tot he RagDollBone
         NewtonRagDollBone* pRagDollBone;
-        //! ID for the Bone
+        // ID for the Bone
         int id;
 
     // ****************

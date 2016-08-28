@@ -23,9 +23,10 @@ extern "C"
 }
 #include <luabind/luabind.hpp>
 
-/**
-// TODO: Comment me
-**/
+/** @class PhysicsVehicleTire
+  * @brief The PhysicsVehicleTire is a wrapper around the NewtonVehicleTire
+  * @detail PhysicsVehicleTire is a wrapper for a special type of NewtonJoint
+  * vehicles are build up heirachially of tires attached to a body **/
 class PhysicsVehicleTire
 {
     // ******************************

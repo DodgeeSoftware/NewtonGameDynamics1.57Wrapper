@@ -34,7 +34,13 @@ extern "C"
 #include "IPhysicsJoint.h"
 
 // TODO - implement Newton joint accessors. Documentation is poor
-/** The PhysicsUniversalJoint is a wrapper around the Newton UniversalJoint **/
+
+/** @class PhysicsUniversalJoint
+  * @brief The PhysicsUniversalJoint is a wrapper around the Newton UniversalJoint
+  * @detail PhysicsUniversalJoint implements an IPhysicsJoint and
+  * functions to create a sort of double hinge joint where attached
+  * bodies may rotate around a pin or around a perpendicular axis
+  * to that pin **/
 class PhysicsUniversalJoint : public IPhysicsJoint
 {
     // ******************************

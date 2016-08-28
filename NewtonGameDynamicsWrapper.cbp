@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="NewtonGameDynamicsWrapper" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="./NewtonGameDynamicsWrapper" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="./NewtonGameDynamicsWrapper" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Body/IPhysicsBody.cpp" />
+		<Unit filename="Body/IPhysicsBody.h" />
+		<Unit filename="Body/PhysicsBody.cpp" />
+		<Unit filename="Body/PhysicsBody.h" />
+		<Unit filename="Body/PhysicsBodyFactory.cpp" />
+		<Unit filename="Body/PhysicsBodyFactory.h" />
+		<Unit filename="Body/PhysicsBodyTypes.h" />
+		<Unit filename="Buoyancy/NewtonBuoyancyPlane.cpp" />
+		<Unit filename="Buoyancy/NewtonBuoyancyPlane.h" />
+		<Unit filename="Buoyancy/PhysicsBuoyancyPlane.cpp" />
+		<Unit filename="Buoyancy/PhysicsBuoyancyPlane.h" />
+		<Unit filename="Collision/Factory/PhysicsCollisionFrameFactory.cpp" />
+		<Unit filename="Collision/Factory/PhysicsCollisionFrameFactory.h" />
+		<Unit filename="Collision/Frames/PhysicsCollisionFrame.cpp" />
+		<Unit filename="Collision/Frames/PhysicsCollisionFrame.h" />
+		<Unit filename="Collision/Frames/PhysicsCollisionFrameTypes.h" />
+		<Unit filename="Collision/Generic/PhysicsCollisionFrameClosestPoint.h" />
+		<Unit filename="Collision/Generic/PhysicsCollisionFrameClosestPoints.h" />
+		<Unit filename="Collision/Generic/PhysicsCollisionFrameCollide.h" />
+		<Unit filename="Collision/Generic/PhysicsGenericCollision.cpp" />
+		<Unit filename="Collision/Generic/PhysicsGenericCollision.h" />
+		<Unit filename="Collision/Rays/PhysicsCollisionFrameRayImpactData.h" />
+		<Unit filename="Debugger/IPhysicsDebugger.cpp" />
+		<Unit filename="Debugger/IPhysicsDebugger.h" />
+		<Unit filename="GamePhysics.h" />
+		<Unit filename="Joints/Factory/PhysicsJointFactory.cpp" />
+		<Unit filename="Joints/Factory/PhysicsJointFactory.h" />
+		<Unit filename="Joints/IPhysicsJoint.cpp" />
+		<Unit filename="Joints/IPhysicsJoint.h" />
+		<Unit filename="Joints/PhysicsBallAndSocketJoint.cpp" />
+		<Unit filename="Joints/PhysicsBallAndSocketJoint.h" />
+		<Unit filename="Joints/PhysicsCorkscrewJoint.cpp" />
+		<Unit filename="Joints/PhysicsCorkscrewJoint.h" />
+		<Unit filename="Joints/PhysicsCustomJoint.cpp" />
+		<Unit filename="Joints/PhysicsCustomJoint.h" />
+		<Unit filename="Joints/PhysicsHingeJoint.cpp" />
+		<Unit filename="Joints/PhysicsHingeJoint.h" />
+		<Unit filename="Joints/PhysicsJointTypes.h" />
+		<Unit filename="Joints/PhysicsSliderJoint.cpp" />
+		<Unit filename="Joints/PhysicsSliderJoint.h" />
+		<Unit filename="Joints/PhysicsUniversalJoint.cpp" />
+		<Unit filename="Joints/PhysicsUniversalJoint.h" />
+		<Unit filename="Joints/PhysicsUpVectorJoint.cpp" />
+		<Unit filename="Joints/PhysicsUpVectorJoint.h" />
+		<Unit filename="Materials/Factory/PhysicsMaterialFactory.cpp" />
+		<Unit filename="Materials/Factory/PhysicsMaterialFactory.h" />
+		<Unit filename="Materials/PhysicsMaterial.cpp" />
+		<Unit filename="Materials/PhysicsMaterial.h" />
+		<Unit filename="Ragdoll/IPhysicsRagDoll.cpp" />
+		<Unit filename="Ragdoll/IPhysicsRagDoll.h" />
+		<Unit filename="Ragdoll/PhysicsRagDoll.cpp" />
+		<Unit filename="Ragdoll/PhysicsRagDoll.h" />
+		<Unit filename="Ragdoll/PhysicsRagDollBone.cpp" />
+		<Unit filename="Ragdoll/PhysicsRagDollBone.h" />
+		<Unit filename="Rays/IPhysicsRay.cpp" />
+		<Unit filename="Rays/IPhysicsRay.h" />
+		<Unit filename="Rays/PhysicsRayClosest.cpp" />
+		<Unit filename="Rays/PhysicsRayClosest.h" />
+		<Unit filename="Rays/PhysicsRayDefault.cpp" />
+		<Unit filename="Rays/PhysicsRayDefault.h" />
+		<Unit filename="Rays/PhysicsRayFurthest.cpp" />
+		<Unit filename="Rays/PhysicsRayFurthest.h" />
+		<Unit filename="Rays/PhysicsRayImpactData.h" />
+		<Unit filename="Triggers/IPhysicsTrigger.cpp" />
+		<Unit filename="Triggers/IPhysicsTrigger.h" />
+		<Unit filename="Utilities/NewtonAABB.h" />
+		<Unit filename="Utilities/NewtonFreezeThreshold.h" />
+		<Unit filename="Utilities/NewtonGlobalScale.h" />
+		<Unit filename="Utilities/NewtonMassMatrix.cpp" />
+		<Unit filename="Utilities/NewtonMassMatrix.h" />
+		<Unit filename="Utilities/NewtonMatrix4.h" />
+		<Unit filename="Utilities/NewtonUtils.h" />
+		<Unit filename="Utilities/NewtonVector2.h" />
+		<Unit filename="Utilities/NewtonVector3.h" />
+		<Unit filename="Vehicle/IPhysicsVehicle.cpp" />
+		<Unit filename="Vehicle/IPhysicsVehicle.h" />
+		<Unit filename="Vehicle/PhysicsVehicle.cpp" />
+		<Unit filename="Vehicle/PhysicsVehicle.h" />
+		<Unit filename="Vehicle/PhysicsVehicleTire.cpp" />
+		<Unit filename="Vehicle/PhysicsVehicleTire.h" />
+		<Unit filename="World/EFrictionModel.h" />
+		<Unit filename="World/EPlatformArchitecture.h" />
+		<Unit filename="World/ESolverModel.h" />
+		<Unit filename="World/PhysicsWorld.cpp" />
+		<Unit filename="World/PhysicsWorld.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

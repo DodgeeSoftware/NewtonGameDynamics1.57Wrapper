@@ -19,6 +19,10 @@ extern "C"
 
 // TODO: implement this class por get rid of it
 // TODO: Comment me
+/** @class IPhysicsVehicle
+  * @brief An interface definition for a PhysicsVehicle
+  * @detail This class defines all the basic and mandatory
+  * functions to implement for a PhysicsVehicle **/
 class IPhysicsVehicle
 {
     // ******************************

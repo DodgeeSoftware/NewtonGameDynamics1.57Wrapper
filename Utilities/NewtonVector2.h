@@ -23,7 +23,9 @@ extern "C"
 #include <cstddef>
 #include <newton.h>
 
-/** The NewtonVector3 class is a minimalistic description of a vector with three components x, y, z **/
+/** @class NewtonVector2
+  * @brief An simple container for an mathematical 2d vector
+  * @detail The NewtonVector3 class is a minimalistic description of a vector with three components x, y **/
 class NewtonVector2
 {
     // ******************************

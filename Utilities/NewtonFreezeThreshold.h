@@ -28,7 +28,13 @@ extern "C"
 #include <cstddef>
 #include <newton.h>
 
-// TODO: comment me
+/** @class NewtonFreezeThreshold
+  * @brief The NewtonFreezeThreshold is a wrapper around the FreezeThreshold of NewtonBodies, NewtonVehicles and NewtonJoints
+  * @detail NewtonFreezeThreshold is a simple class defining
+  * parametres for the FreezeThreshold of physics bodies. When
+  * a NewtonBody / PhysicsBody has autofreeze turned on, these
+  * thresholds are used to 'freeze' an object haulting calculations
+  * until some kind of force disturbs the Body to unfreeze it **/
 class NewtonFreezeThreshold
 {
     // ******************************

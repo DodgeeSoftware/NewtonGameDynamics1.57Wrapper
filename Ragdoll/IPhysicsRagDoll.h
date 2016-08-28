@@ -19,16 +19,30 @@ extern "C"
 
 // TODO: Consider Getting Rid of This
 // TODO: implement me
+/** @class IPhysicsRagDoll
+  * @brief Implement the IPhysicsRagDoll to create a PhysicsRagDoll.**/
 class IPhysicsRagDoll
 {
     // ******************************
     // * CONSTRUCTORS / DESTRUCTORS *
     // ******************************
     public:
+        //! Constructor
         IPhysicsRagDoll();
+        //! Destructor
         virtual ~IPhysicsRagDoll();
 
     protected:
+        // Methods and members
+
+    // ************************
+    // * OVERLOADED OPERATORS *
+    // ************************
+    public:
+        // Methods and members
+
+    protected:
+        // Methods and members
 
     // ****************
     // * LUA BINDINGS *

@@ -27,6 +27,10 @@ extern "C"
 #include "NewtonVector3.h"
 #include "PhysicsRagDollBone.h"
 
+/** @class PhysicsRagDoll
+  * @brief Implement the PhysicsRagDoll to create a PhysicsRagDoll. To use this you'll want to either
+  * create a custom scene node that has one of these as a member or alternatively this will form a base
+  * for your custom scenenode **/
 class PhysicsRagDoll
 {
     // ******************************
@@ -43,23 +47,39 @@ class PhysicsRagDoll
         //! Destructor
         virtual ~PhysicsRagDoll() {}
 
+    protected:
+         // members and methods
+
+    // ************************
+    // * OVERLOADED OPERATORS *
+    // ************************
+    public:
+        // members and methods
+
+    protected:
+        // members and methods
+
     // ****************
     // * NEWTON WORLD *
     // ****************
     public:
-        //! Get World
+        /** @brief Get World
+          * @return NewtonWorld pointer **/
         virtual const NewtonWorld* getNewtonWorld() const { return this->pNewtonWorld; }
-        //! Set NewtonWorld
+        /** @brief Set NewtonWorld
+          * @param NewtonWorld **/
         virtual void setNewtonWorld(NewtonWorld* pNewtonWorld) { this->pNewtonWorld = pNewtonWorld; }
 
     protected:
-        //! Pointer to the Physics World
+        // Pointer to the Physics World
         NewtonWorld* pNewtonWorld;
 
     // *****************************
     // * GENERAL RAGDOLL FUNCTIONS *
     // *****************************
     public:
+        /** @brief build the Ragdoll
+          * @return true on success failse on failure**/
         virtual bool build()
         {
             // Validate required parameters
@@ -73,17 +93,23 @@ class PhysicsRagDoll
             // If the doll was made return true otherwise return falase
             return (this->pNewtonRagDoll != 0);
         }
+        /** @brief clear */
         virtual void clear()
         {
             // Destroy the rag doll
             NewtonDestroyRagDoll(this->pNewtonWorld, this->pNewtonRagDoll);
         }
-        //! Must call this function before adding joints to the Rag doll
+        /** @brief Must call this function before adding joints to the Rag doll **/
         virtual void beginRagDoll()
         {
             // Begin the rag doll (allow joints to be added)
             NewtonRagDollBegin(this->pNewtonRagDoll);
         }
+        /** @brief addBone
+          * @param pParentRagDollBone parentragdollbone
+          * @param matrix matrix4 transformation
+          * @param pCollision Collision frame to use for the joint
+          * @param size size of the bone (newton scale)**/ // TODO: document this better relative to parent?
         virtual PhysicsRagDollBone* addBone(NewtonRagDollBone* pParentRagDollBone, dFloat mass, NewtonMatrix4 matrix, NewtonCollision* pCollision, NewtonVector3 size)
         {
             // Validate required parameters
@@ -104,13 +130,14 @@ class PhysicsRagDoll
             /* TODO: Need to add Bones to an STL Vector
                 or possibly a map by ID if we force all bones to have an ID (I think having an ID should be mandatory)*/
         }
-        //! Must call this function after you are finished adding joints to the Rag doll
+        /** @brief Must call this function after you are finished adding joints to the Rag doll **/
         virtual void endRagDoll()
         {
             // End the rag doll (no more joints to submit)
             NewtonRagDollEnd(this->pNewtonRagDoll);
         }
-        //! Find a bone by ID
+        /** @brief Find a bone by ID
+          * @param id **/
         virtual NewtonRagDollBone* findBone(int id)
         {
             // Validate required parameters
@@ -128,9 +155,11 @@ class PhysicsRagDoll
     // * CALLBACKS *
     // *************
     public:
-        //! Get the transform Callback
+        /** @brief Get the transform Callback
+          * @return the transform callback for the ragdoll **/
         virtual NewtonSetRagDollTransform getTransformCallBack() { return this->pTransformCallBack; }
-        //! Set the transform Callback
+        /** @brief Set the transform Callback
+          * @param pCallback the transform callback for the ragdoll **/
         virtual void setTransformCallBack(NewtonSetRagDollTransform pCallBack)
         {
             // Set the local reference of the
@@ -139,9 +168,11 @@ class PhysicsRagDoll
             if (pNewtonRagDoll != 0)
                 NewtonRagDollSetTransformCallback(this->pNewtonRagDoll, this->pTransformCallBack);
         }
-        //! Get the ApplyForceAndTorque CallBack
+        /** @brief Get the ApplyForceAndTorque CallBack
+          * @return the force and torque callback **/
         virtual NewtonApplyForceAndTorque getForceAndTorqueCallBack() { return this->pForceAndTorqueCallBack; }
-        //! Set ApplyForceAndTorque CallBack
+        /** @brief Set ApplyForceAndTorque CallBack
+          * @param pCallback the force and torque callback **/
         virtual void setForceAndTorqueCallBack(NewtonApplyForceAndTorque pCallBack)
         {
             // Set the local reference to the Fore and Torque Callback

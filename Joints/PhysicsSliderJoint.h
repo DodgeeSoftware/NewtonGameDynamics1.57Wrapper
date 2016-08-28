@@ -33,7 +33,11 @@ extern "C"
 #include "IPhysicsJoint.h"
 
 // TODO - check the accessors I am not sure if they are correct
-/**  The PhysicsSliderJoint is a small wrapper around the NewtonSlider Joint **/
+/** @class PhysicsSliderJoint
+  * @brief An wrapper around A NewtonSliderJoint
+  * @detail PhysicsSliderJoint implements an IPhysicsJoint and
+  * functions to create a rail vector upon which an object may slide
+  * but not rotate **/
 class PhysicsSliderJoint : public IPhysicsJoint
 {
     // ******************************

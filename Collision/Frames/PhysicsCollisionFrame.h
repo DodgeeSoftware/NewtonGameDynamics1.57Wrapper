@@ -30,7 +30,9 @@ extern "C"
 #include "NewtonUtils.h"
 #include "PhysicsCollisionFrameTypes.h"
 
-/** The PhysicsCollisionFrame class is a wrapper around a NewtonCollision Object. The PhysicsCollisionFrame can used as a collision object
+/** @class PhysicsCollisionFrame
+  * @brief The PhysicsCollisionFrame is a container for a NewtonCollision
+  * @detail The PhysicsCollisionFrame class is a wrapper around a NewtonCollision Object. The PhysicsCollisionFrame can used as a collision object
     on its own but doing so will require you to manually handle collisions **/
 class PhysicsCollisionFrame
 {

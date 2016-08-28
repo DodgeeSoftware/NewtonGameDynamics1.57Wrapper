@@ -12,9 +12,14 @@
 #include "PhysicsCollisionFramesFactory.h"
 #include "PhysicsBodyTypes.h"
 
-/** The PhysicsBodyFactory is a factory which makes PhysicsBodies. **/
+/** @class PhysicsBodyFactory
+  * @brief The PhysicsBodyFactory class factory that Produces
+  * PhysicsBodies **/
 class PhysicsBodyFactory
 {
+    // ****************
+    // * CONSTRUCTORS *
+    // ****************
     public:
         //! Default Constructor
         PhysicsBodyFactory()
@@ -24,6 +29,13 @@ class PhysicsBodyFactory
         //! Destructor
         virtual ~PhysicsBodyFactory() {}
 
+    protected:
+        ////! Copy Constructor
+        //PhysicsBodyFactory(PhysicsBodyFactory& other) {}
+
+    // *********************
+    // * GENERAL FUNCTIONS *
+    // *********************
     public:
         //! Initialise the Factory
         virtual bool init(irr::IrrlichtDevice* pDevice, NewtonWorld* pNewtonWorld)

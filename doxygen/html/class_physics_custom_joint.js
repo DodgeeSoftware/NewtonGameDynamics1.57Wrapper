@@ -1,0 +1,25 @@
+var class_physics_custom_joint =
+[
+    [ "PhysicsCustomJoint", "class_physics_custom_joint.html#a074d6853edbef0ce309dd868214b7a35", null ],
+    [ "~PhysicsCustomJoint", "class_physics_custom_joint.html#a90c9e3b6968abcb6b0d021a84de4b88b", null ],
+    [ "addAngularRow", "class_physics_custom_joint.html#ab795ab9310ac462642d7767031099810", null ],
+    [ "addGeneralRow", "class_physics_custom_joint.html#aa45f3c8a0489f017a55ccdbb5fa76f7b", null ],
+    [ "addLinearRow", "class_physics_custom_joint.html#a305dbcd17da27dd7de7b0fb867f9da58", null ],
+    [ "build", "class_physics_custom_joint.html#a69aaf944ce15a6ed3d81008a6184cb69", null ],
+    [ "getChildNewtonBody", "class_physics_custom_joint.html#a87c7f9ffb96464a1dea6732a66a51c95", null ],
+    [ "getDegreesOfFreedom", "class_physics_custom_joint.html#a65d51f84ce3bab40e977b8950ff6ede9", null ],
+    [ "getParentNewtonBody", "class_physics_custom_joint.html#a81053d8d37d51ac82d7b245f8a7570ad", null ],
+    [ "getRowForce", "class_physics_custom_joint.html#a92d488a95ee508aff907b834c1540816", null ],
+    [ "getType", "class_physics_custom_joint.html#a42022beb6bccac7c96a1fa4579b8e77f", null ],
+    [ "getUserBilateralCallBack", "class_physics_custom_joint.html#a61b2175a6f0786e54bfd825c7aff18a9", null ],
+    [ "setRowAcceleration", "class_physics_custom_joint.html#ad5157d7c25cdccd7bd6c9bf3db99f1ca", null ],
+    [ "setRowMaximumFriction", "class_physics_custom_joint.html#aaafcb54a1389c23a27296972d6e192ae", null ],
+    [ "setRowMinimumFriction", "class_physics_custom_joint.html#a85a3b7f1dcc4351f9794ebbe482cef00", null ],
+    [ "setRowSpringDamperAcceleration", "class_physics_custom_joint.html#ae4d936fd087b98a57377011f43fb3b83", null ],
+    [ "setRowStiffness", "class_physics_custom_joint.html#a5c864eaa5b47afb1b0e35bd9441ad413", null ],
+    [ "setUserBilateralCallBack", "class_physics_custom_joint.html#ae246bccc7f0d7897c5d3ecba07bae653", null ],
+    [ "degreesOfFreedom", "class_physics_custom_joint.html#a0e49df2e62eac0619ee25fdb325ac3e4", null ],
+    [ "pChildNewtonBody", "class_physics_custom_joint.html#adecac016d52c1f454770c0c59764929b", null ],
+    [ "pCustomJointCallBack", "class_physics_custom_joint.html#a852fdfde4e01ec6baf0d563cf1a0ece2", null ],
+    [ "pParentNewtonBody", "class_physics_custom_joint.html#ac9ec817983027d359d1d293ac3cec91a", null ]
+];

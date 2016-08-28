@@ -24,7 +24,9 @@
 #include "NewtonVector3.h"
 #include "IPhysicsRay.h"
 
-/** The PhysicsDefaultRayCast is a ray which goes through the scene striking everything it can. It stores
+/** @class PhysicsRayDefault
+  * @brief The PhysicsDefaultRayCast is a wrapper around a basic physics ray
+  * @detail The PhysicsDefaultRayCast is a ray which goes through the scene striking everything it can. It stores
     all the data in a list sorted from the closest to the furthest **/
 class PhysicsRayDefault : public IPhysicsRay
 {

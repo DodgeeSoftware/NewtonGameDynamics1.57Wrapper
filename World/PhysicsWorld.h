@@ -35,7 +35,12 @@ extern "C"
 #include "NewtonVector3.h"
 #include "PhysicsBuoyancyPlane.h"
 
-/** The PhysicsWorld is a container for the NewtonWorld **/
+/** @class PhysicsWorld
+  * @brief The PhysicsWorld is a container for the NewtonWorld
+  * @detail The PhysicsWorld Class is the core of the wrapper
+  * and provides interpolation from one frame to another and
+  * provides a NewtonWorld for our Objects to live in
+  **/
 class PhysicsWorld
 {
     // ******************************

@@ -14,20 +14,21 @@
 // C++ Includes
 #include <iostream>
 
-// LUA BIND
+// LUA BIND Includes
 extern "C"
 {
     #include <lua.h>
     #include <lualib.h>
     #include <lauxlib.h>
 }
+// LUABIND Includes
 #include <luabind/luabind.hpp>
 
-// NEWTON INCLUDES
+// NEWTON Includes
 #include <cstddef>
 #include <Newton.h>
 
-// NEWTON WRAPPER INCLUDES
+// GAMEPHYSICS Includes
 #include "NewtonAABB.h"
 #include "NewtonFreezeThreshold.h"
 #include "NewtonGlobalScale.h"
@@ -36,7 +37,9 @@ extern "C"
 #include "NewtonVector3.h"
 #include "IPhysicsJoint.h"
 
-/** The PhysicsUpVectorJoint is a container for a joint that places a pin
+/** @class PhysicsUpVectorJoint
+  * @brief The PhysicsUpVectorJoint is a wrapper around the Newton UniversalJoint
+  * @detail The PhysicsUpVectorJoint is a container for a joint that places a pin
     constraint on a physics body **/
 class PhysicsUpVectorJoint : public IPhysicsJoint
 {

@@ -35,7 +35,10 @@ extern "C"
 #include "NewtonVector3.h"
 #include "PhysicsBodyTypes.h"
 
-/** The PhysicsBody class is a wrapper around a NewtonBody **/
+/** @class PhysicsBody
+  * @brief The PhysicsBody class is a wrapper around a NewtonBody
+  * @detail This class is usually a component of a scenenode or
+  * a base class of a scenenode **/
 class PhysicsBody
 {
     // ******************************

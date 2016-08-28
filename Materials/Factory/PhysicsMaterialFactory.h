@@ -28,7 +28,9 @@ extern "C"
 // NEWTON WRAPPER INCLUDES
 #include "PhysicsMaterial.h"
 
-/** The PhysicsMaterialFactory is a favtory which makes Physics materials**/
+/** @class PhysicsMaterialFactory
+  * @brief PhysicsMaterialFactory is a class which builds Physics Materials
+  * @detail **/
 class PhysicsMaterialFactory
 {
     // ******************************

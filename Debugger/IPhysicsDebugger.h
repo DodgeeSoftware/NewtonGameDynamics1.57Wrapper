@@ -49,7 +49,9 @@ extern "C"
 #include "IPhysicsRagDoll.h"
 #include "IPhysicsDebugger.h"
 
-/** Implement the IPhysicsDebugger to create a physics debugger for your rendering engine. Make call backs for 'pForEachPolygonDo' and 'forEachBodyDo'
+/** @class IPhysicsDebugger
+  * @brief Implement the IPhysicsDebugger to create a physics debugger for your rendering engine.
+  * @detail Make call backs for 'pForEachPolygonDo' and 'forEachBodyDo'
     in your game's main scope and pass them into you own PhysicsDebugger custom made for your rendering engine **/
 class IPhysicsDebugger
 {

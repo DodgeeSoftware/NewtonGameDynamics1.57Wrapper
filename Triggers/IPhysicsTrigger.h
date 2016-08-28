@@ -26,6 +26,11 @@
 
 /* TODO: Get and set Mesh as void* (NOTE: IMeshSceneNodes and IAnimatedMeshSceneNodes will not inherit this class, so no problems with prototype conflicts)
     in the inheritance hierarchies */
+
+/** @class IPhysicsTrigger
+  * @brief An interface definition for a IPhysicsTrigger
+  * @detail This class defines all the basic and mandatory
+  * functions to implement for a PhysicsTrigger **/
 class IPhysicsTrigger : public PhysicsCollisionFrame
 {
     public:

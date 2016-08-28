@@ -10,19 +10,28 @@
 #ifndef NEWTONMASSMATRIX_H
 #define NEWTONMASSMATRIX_H
 
-// LUA BIND INCLUDES
+// C++ Includes
+#include <cstddef>
+
+// LUA Includes
 extern "C"
 {
     #include <lua.h>
     #include <lualib.h>
     #include <lauxlib.h>
 }
+// LUABIND Includes
 #include <luabind/luabind.hpp>
 
-#include <cstddef>
+// NEWTON GAME DYNAMICS Includes
 #include <newton.h>
 
-/** The NewtonMassMatrix class is a container for the Moment of inertia for NewtonBodies **/
+/** @class NewtonMassMatrix
+  * @brief The NewtonMassMatrix class is a container for the Moment of inertia for NewtonBodies
+  * @detail A Mass Matrix is a special mathematical Matrix used in analytical
+  * mechanics. In NewtonGameDynamics there is a physical structure to an object
+  * and a centre of mass for a physics body, a mass matrix sets how mass is distributed
+  * across the volume **/
 class NewtonMassMatrix
 {
     // ******************************

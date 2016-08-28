@@ -22,7 +22,9 @@
 #include "NewtonVector3.h"
 #include "IPhysicsRay.h"
 
-/** The PhysicsRayClosest is a ray which goes through the scene striking everything it can. It stores
+/** @class PhysicsRayClosest
+  * @brief The PhysicsRayClosest is a useful container for casting certain types of rays
+  * @detail The PhysicsRayClosest is a ray which goes through the scene striking everything it can. It stores
     only the closest object hit in its impact data vector **/
 class PhysicsRayClosest : public IPhysicsRay
 {

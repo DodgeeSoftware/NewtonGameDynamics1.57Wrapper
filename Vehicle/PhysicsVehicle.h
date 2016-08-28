@@ -27,8 +27,11 @@ extern "C"
 #include "NewtonVector3.h"
 #include "NewtonMatrix4.h"
 
-/** Must call setTireCallBack first so that there is a callback to handle vehicle updates **/
 // TODO: We need a vehicle control system, so that the callback has data to apply to the tires
+
+/** @class PhysicsVehicle
+  * @brief The PhysicsVehicle is a wrapper around the NewtonVehicle
+  * @detail Must call setTireCallBack first so that there is a callback to handle vehicle updates **/
 class PhysicsVehicle
 {
     // ******************************

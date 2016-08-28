@@ -24,8 +24,10 @@
 #include "NewtonVector3.h"
 #include "PhysicsBodyTypes.h"
 
-// TODO: Consider getting rid of this as there is only one kind of physicsbody
-// TODO: Comment me
+/** @class IPhysicsBody
+  * @brief An interface definition for a Physicsody
+  * @detail This class defines all the basic and mandatory
+  * functions to implement for a PhysicsBody **/
 class IPhysicsBody
 {
     // ******************************

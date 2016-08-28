@@ -8,24 +8,29 @@
 #ifndef NEWTONAABB_H
 #define NEWTONAABB_H
 
-// LUA BIND INCLUDES
+// LUA Includes
 extern "C"
 {
     #include <lua.h>
     #include <lualib.h>
     #include <lauxlib.h>
 }
+// LUA BIND Includes
 #include <luabind/luabind.hpp>
 
-// C++ INCLUDES
+// C++ Includes
 #include <cstddef>
 #include <cmath>
 
-// NEWTON INCLUDES
+// NEWTON Includes
 #include <newton.h>
 
-/** The NewtonAABB class describes an Axis-Aligned Bounding Box. The box is defined
-    by two points which make up two diagonally opposite vertices of the box **/
+/** @class NewtonAABB
+  * @brief An simple container for an Axis Aligned bounding box
+  * @detail This is used to define the size of the physics world along
+  * with get the bounding boxes of NewtonBodies. it describes an
+  * Axis-Aligned Bounding Box by two points which make up two
+  * diagonally opposite vertices of the box **/
 class NewtonAABB
 {
     // ******************************

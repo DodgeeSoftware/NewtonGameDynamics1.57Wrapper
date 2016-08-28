@@ -29,7 +29,9 @@ extern "C"
 // NEWTON WRAPPER INCLUDES
 #include "NewtonVector2.h"
 
-/** The NewtonVector3 class is a minimalistic description of a vector with three components x, y, z **/
+/** @class NewtonVector3
+  * @brief An simple container for an mathematical 3d vector
+  * @detail The NewtonVector3 class is a minimalistic description of a vector with three components x, y **/
 class NewtonVector3
 {
     // ******************************
