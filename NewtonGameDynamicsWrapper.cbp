@@ -38,8 +38,6 @@
 		<Unit filename="Body/PhysicsBodyFactory.cpp" />
 		<Unit filename="Body/PhysicsBodyFactory.h" />
 		<Unit filename="Body/PhysicsBodyTypes.h" />
-		<Unit filename="Buoyancy/NewtonBuoyancyPlane.cpp" />
-		<Unit filename="Buoyancy/NewtonBuoyancyPlane.h" />
 		<Unit filename="Buoyancy/PhysicsBuoyancyPlane.cpp" />
 		<Unit filename="Buoyancy/PhysicsBuoyancyPlane.h" />
 		<Unit filename="Collision/Factory/PhysicsCollisionFrameFactory.cpp" />
