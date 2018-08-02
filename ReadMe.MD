@@ -6,6 +6,8 @@ Add the GamePhysics folder to your GameFolder (aka where your source code is)
 
 Using the wrapper is pretty straight forward you create a World Class setup your physics dimensions and other relevent settings.
 
+You may have to comment out some LuaBind functions I have added to the wrapper. This wrapper was extracted from the main body of my gameengine which exposes much of its functionality to Lua
+
 I hope the following psuedo code gives you a starting point
 
 ----
