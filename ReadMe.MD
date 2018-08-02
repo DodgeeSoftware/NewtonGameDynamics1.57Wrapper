@@ -10,6 +10,7 @@ I hope the following psuedo code gives you a starting point
 
 ----
 
+// This callback transforms what you see on screen based on the abstract physics body attached to it
 static void transformCallback(const NewtonBody* const body, const dFloat* const matrix)
 {
 	// Grab our user data
